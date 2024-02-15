@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -31,12 +32,21 @@ export default function Home() {
         />
       </div>
 
-      <div style={{ textAlign: "center" }}>
+      <div style={{ textAlign: "center", margin: "48px 0" }}>
         <div>- Next.js를 이용하여 테스트하는 중입니다.</div>
         <div>- 서버사이드 렌더링 로딩시간</div>
-        <div>- 라우팅 및 컨텐츠 표시</div>
-        <div>- 테스트</div>
-        <div>- 빌드 및 배포</div>
+        <br />
+        <div>
+          - 라우팅 및 컨텐츠 표시
+          <br />
+          <Link href={`/blog/1`}>/blog/[slug]</Link>
+          <br />
+          <Link href={`/dashboard`}>/dashboard</Link>
+        </div>
+        <br />
+
+        <div>- e2e 테스트</div>
+        <div>- 빌드 및 배포, GitHub Actions</div>
       </div>
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
