@@ -1,3 +1,6 @@
+@import url('assets/theme/variables.css');
+@import url('assets/theme/base.scss');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

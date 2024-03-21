@@ -37,7 +37,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## cypress 사용
 
-e2e 테스트: npx cypress open
+e2e/component 테스트: npx cypress open
 
 ## SSR
 
@@ -53,3 +53,8 @@ Server Actions are asynchronous functions that are executed on the server. They 
 
 함수에 'use server' 사용
 서버 API를 따로 만들 필요 없이 DB 저장 기능을 클라이언트에서 개발할 수 있음
+
+### use strict
+
+엄격 모드, ES5부터 지원
+런타임시 JS 코드에 대해 엄격한 parsing, error handling 자발적으로 적용하도록
