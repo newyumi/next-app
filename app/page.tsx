@@ -33,8 +33,8 @@ export default function Home() {
       </div>
 
       <div style={{ textAlign: "center", margin: "48px 0" }}>
-        <div>- Next.js를 이용하여 테스트하는 중입니다.</div>
-        <div>- 서버사이드 렌더링 로딩시간</div>
+        <div className="typo-headline">Next.js를 이용하여 테스트하는 중입니다.</div>
+        <div className="typo-subtitle">서버사이드 렌더링 로딩시간</div>
         <br />
         <div>
           - 라우팅 및 컨텐츠 표시

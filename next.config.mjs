@@ -1,13 +1,11 @@
 /** @type {import('next').NextConfig} */
 import * as path from "path";
-import { fileURLToPath } from "url";
 
-const __dirname = fileURLToPath(new URL(".", import.meta.url));
-// const __filename = fileURLToPath(import.meta.url);
-
+const __dirname = path.resolve();
 const nextConfig = {
+  reactStrictMode: true,
   sassOptions: {
-    includePaths: [path.join(__dirname, "styles")],
+    includePaths: [path.join(__dirname, "assests/theme")],
   },
 };
 
